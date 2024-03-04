@@ -148,6 +148,7 @@ root, search the left subtree recursively, and if it is larger, search the right
   <li>Check whether the subtree rooted at this node is balanced (the difference in height of the right and left subtrees is less than or equal to 1).</li>
   <li>If the subtree is unbalanced, perform an appropriate rotation to balance the tree.</li>
 </ol>
+</ol>
 <h3>Balancing a AVL tree</h3>
 <ol type="1">
  <li>Check the height difference of the right and left subtrees for each node in the AVL tree.</li>

@@ -27,7 +27,6 @@ indication of a finite number of disjoint nodes constituting subtrees of a given
 we will be adding to the tree.
 </p>
 <p align="center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20221124174432/binary.png" alt = "binary tree" width="30%" height="100%"></p>
-<p>Here
  <ul>
   <li>Node 1 is the root node</li>
   <li>1 is the parent of 2 and 3</li>
@@ -36,9 +35,7 @@ we will be adding to the tree.
   <li>1 and 2 are the ancestors of 5</li>
   <li>The height of a tree is 2 (e.g. path from 1 to 4)</li>
   <li>The degree of a tree is 2 (e.g. 2 has two descendants (4 and 5) )</li>
-  <li></li>
  </ul>
- </p>
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

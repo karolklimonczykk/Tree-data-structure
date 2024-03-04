@@ -113,6 +113,14 @@ subtree and recursively call the algorithm for the right subtree.
  <li> The inorder for node 7 is 8, so we replace it values ​​of these nodes and remove node 7.</li>
 </ul>
 <p align = "center"><img src="https://i.imgur.com/9BCZxTE.png" alt="example2" width="70%" ></p>
+<h3>Searching in BST</h3>
+<ol>
+ <li>If the tree is empty, return nullptr or a value indicating that the item was not found.</li>
+ <li>If the value of the element you are looking for is equal to the value of the tree root, return a pointer to the root.</li>
+ <li>If the value of the element you are looking for is less than the value
+root, search the left subtree recursively, and if it is larger, search the right subtree recursively.</li>
+ <li>If the value is not found, return nullptr or a value indicating that the item was not found.</li>
+</ol>
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

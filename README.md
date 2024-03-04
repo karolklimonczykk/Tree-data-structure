@@ -46,9 +46,26 @@ subtree and recursively call the algorithm for the right subtree.
  <li>Recursively call the algorithm for the right subtree.</li>
 </ol>
 </p>
-<p align="center"><img src="https://i.imgur.com/2C61eSE.png" alt="tree" height="25%" width="25%"></p>
+<p align="center"><img src="https://i.imgur.com/2C61eSE.png" alt="tree" height="25%" width="25%"><br>Preorder traversal of binary tree: 2,1,3</p>
+<br><br>
+<p><b>Postorder Traversal</b> - involves recursively calling the algorithm for the left subtree, then for the right subtree and visiting the node.
+<ol>
+ <li>Recursively call the algorithm for the left subtree.</li>
+ <li>Recursively call the algorithm for the right subtree.</li>
+ <li>Visit the root.</li>
+</ol>
+</p>
+<p align="center"><img src="https://i.imgur.com/2C61eSE.png" alt="tree" height="25%" width="25%"><br>Postorder traversal of binary tree: 1,3,2</p>
+<br><br>
+<p><b>Inorder Traversal</b> - involves recursively calling the algorithm for the left subtree, visiting the node, and recursively calling the algorithm for the right subtree.
+<ol>
+ <li>Recursively call the algorithm for the left subtree.</li>
+ <li>Visit the root.</li>
+ <li>Recursively call the algorithm for the right subtree.</li>
+</ol>
+</p>
+<p align="center"><img src="https://i.imgur.com/2C61eSE.png" alt="tree" height="25%" width="25%"><br>Inorder traversal of binary tree: 1,2,3</p>
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>
-  <li>GIFs are taken from <a href="https://github.com/kdn251/interviews">here</a></li>
 </ul>

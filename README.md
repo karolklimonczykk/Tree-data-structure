@@ -12,8 +12,8 @@ indication of a finite number of disjoint nodes constituting subtrees of a given
  <li><b>Degree of a node</b> - The number of direct descendants of the node.</li>
  <li><b>Degree of a tree</b> - Maximum degree of all nodes. Degree zero nodes have no children and are called leaves.</li>
  <li><b>Height of a node</b> - The number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).</li>
- <li><b>Height of a tree</b> - Maximum height of all nodes. The height of the root node.</li>
- 
+ <li><b>Height of a tree</b> - Maximum height of all nodes. The longest path starting from the root node.</li>
+ <br>
  <p align="center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20221124153129/Treedatastructure.png" alt="terminologies" width="80%"></p>
 </ul>
 <h2>References</h2>

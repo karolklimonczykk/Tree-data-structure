@@ -17,7 +17,7 @@ indication of a finite number of disjoint nodes constituting subtrees of a given
  <p align="center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20221124153129/Treedatastructure.png" alt="terminologies" width="80%"></p>
 </ul>
 <h2>Binary tree</h2>
-<p>is a type of data structure consisting of nodes connected by edges, where each node has at most two children, called left and right subtrees.</p>
+<p>Binary tree is a type of data structure consisting of nodes connected by edges, where each node has at most two children, called left and right subtrees.</p>
 <p>To implement a binary tree we need two types of data:
  <ul>
   <li>node structure, containing information about the node value, pointers to left and right subtrees,</li>

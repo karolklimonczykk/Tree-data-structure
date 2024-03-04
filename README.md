@@ -108,9 +108,9 @@ subtree and recursively call the algorithm for the right subtree.
 <ul>
  <li>We want to remove the node with value 7. We start with the root whose value is 5.</li>
  <li>7 is greater than 5, so we go to the right subtree.</li>
- <li>hen we compare the value of 7 with node value 7. ->  We found a node to remove.</li>
+ <li>Compare the value of 7 with node value 7 -> We found a node to remove.</li>
  <li>Node 7 has two children (6 and 8), so we need to find its inorder successor (i.e. the smallest node in the right subtree).</li>
- <li> The inorder for node 7 is 8, so we replace it values ​​of these nodes and remove node 8.</li>
+ <li> The inorder for node 7 is 8, so we replace it values ​​of these nodes and remove node 7.</li>
 </ul>
 <p align = "center"><img src="https://i.imgur.com/9BCZxTE.png" alt="example2" width="70%" ></p>
 <h2>References</h2>

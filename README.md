@@ -89,22 +89,30 @@ subtree and recursively call the algorithm for the right subtree.
 <p align = "center"><img src="https://i.imgur.com/UAFCCS5.png" alt="example1" width="70%" ></p>
 <h3>Removing a node</h3>
 <ol>
- <li></li>
- <li></li>
+ <li>If the tree is empty, finish the operation.</li>
+ <li>Otherwise, find the node to delete. Start at the root and do the following steps:</li>
   <ol type="a">
-   <li></li>
-   <li></li>
-   <li></li>
+   <li>If the value of the node to be removed is less than the value of the current node, go to the left one subtrees.</li>
+   <li>Otherwise, go to the right subtree.</li>
+   <li>If the value of the node to remove is equal to the value of the current node, then we have found the node to deletion.</li>
   </ol>
+ <li>Where:</li>
   <ol type="a">
-   <li></li>
-   <li></li>
-   <li></li>
+   <li>the node to be removed is a leaf (no children), remove it directly.</li>
+   <li>the node to be deleted has one child, replace it with its child.</li>
+   <li>the node to be removed has two children, find the inorder successor of this node (the smallest node in right subtree), replace the node values, and then remove the successor inorder.</li>
   </ol>
- </li></li>
- <li></li>
+ <li>Repeat steps 2-3 until we remove the node that we want.</li>
 </ol>
-
+<h3>Removing a node step-by-step</h3>
+<ul>
+ <li>We want to remove the node with value 7. We start with the root whose value is 5.</li>
+ <li>7 is greater than 5, so we go to the right subtree.</li>
+ <li>hen we compare the value of 7 with node value 7. ->  We found a node to remove.</li>
+ <li>Node 7 has two children (6 and 8), so we need to find its inorder successor (i.e. the smallest node in the right subtree).</li>
+ <li> The inorder for node 7 is 8, so we replace it values ​​of these nodes and remove node 8.</li>
+</ul>
+<p align = "center"><img src="https://i.imgur.com/9BCZxTE.png" alt="example2" width="70%" ></p>
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

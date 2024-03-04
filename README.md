@@ -156,13 +156,19 @@ root, search the left subtree recursively, and if it is larger, search the right
 <p align="center"><img src="https://i.imgur.com/bJJy7fO.png" alt="avl_tree_alg"></p>
 <h3>Balancing a AVL tree step-by-step</h3>
 <p> In this tree, the difference in height of the left and right subtrees of node 4 is 2 (3 - 1), which means that the tree is unbalanced and we need to use a balancing algorithm.</p>
-<ol>
+<ol type="1">
  <li>We check which node is unbalanced. In our case, this is node 4.</li>
  <li>We find the farthest unbalanced node down the tree. In our case, these are nodes 3 and 5.</li>
- <li>We perform appropriate rotation to restore balance. In our case, we perform RR rotation, i.e. we move node 6 to the place of node 4 and node 4 to the place of node 6.</li>
+ <li>We perform appropriate rotation to restore balance. In our case, we perform RR rotation, i.e. we move node 6 to the place of node 4 and node 4 to the place of node 6. 
+ </li>
  <li>We update the heights of nodes in the tree.</li>
-</ol>
+</ol> <br>
  <p>In the resulting tree, each left and right subtree now has a height difference of at most 1, which means the tree is balanced.</p>
+<h3>Finding the height of an AVL tree</h3>
+ <ol>
+  <li>If the tree is empty, return 0.</li>
+  <li>Otherwise, return the maximum of the left and right subtree heights for the root of the AVL tree, increased by</li>
+ </ol>
 <h2>Difference between BST and AVL tree</h2>
 <table align="center">
 <thead>

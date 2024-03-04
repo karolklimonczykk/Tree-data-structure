@@ -65,6 +65,46 @@ subtree and recursively call the algorithm for the right subtree.
 </ol>
 </p>
 <p align="center"><img src="https://i.imgur.com/2C61eSE.png" alt="tree" height="25%" width="25%"><br>Inorder traversal of binary tree: 1,2,3</p>
+<h2>BST algorithms</h2>
+<h3>Adding a node</h3>
+<ol>
+ <li>If the tree is empty, create a new node and set it as the root of the tree.</li>
+ <li>Compare the value of the added node with the value of the tree root.</li>
+ <li>If the value of the node being added is less than the value of the root, go to the left subtree and recursively call the algorithm for the left subtree.</li>
+ <li>If the value of the node being added is greater than the value of the root, go to the right subtree and recursively call the algorithm for the right subtree.</li>
+ <li>If the value of the node you are adding is equal to the value of the root, do not take any action (node ​​already exists in the tree).</li>
+ <li>Once you have found a suitable place for the node you are adding, create a new node and set it as the left or right descendant of the corresponding node.</li>
+</ol>
+<h3>Adding a node step-by-step</h3>
+<p>Suppose we have a BST tree with root value 8 and we want to add a node with value 7 to it.</p>
+<ul>
+ <li>The tree is not empty, so we go to step 2.</li>
+ <li>We compare the value of the inserted node (7) with the value of the current node (8).</li>
+ <li>7 is less than 8, so we move to the left subtree.</li>
+ <li>We compare the value of the inserted node (7) with the value of the current node of the left subtree(which is equal to 3).</li>
+ <li>7 is greater than 3, so we move to the right subtree of the left subtree.</li>
+ <li>Now we compare the value 7 with the value 6 (7>6 so we go to the right subtree)</li>
+ <li>The right subtree is empty, so we add a new node with value 7 as a child of node 6.</li>
+</ul>
+<p align = "center"><img src="https://i.imgur.com/UAFCCS5.png" alt="example1" width="70%" ></p>
+<h3>Removing a node</h3>
+<ol>
+ <li></li>
+ <li></li>
+  <ol type="a">
+   <li></li>
+   <li></li>
+   <li></li>
+  </ol>
+  <ol type="a">
+   <li></li>
+   <li></li>
+   <li></li>
+  </ol>
+ </li></li>
+ <li></li>
+</ol>
+
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

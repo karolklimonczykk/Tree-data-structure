@@ -121,6 +121,49 @@ subtree and recursively call the algorithm for the right subtree.
 root, search the left subtree recursively, and if it is larger, search the right subtree recursively.</li>
  <li>If the value is not found, return nullptr or a value indicating that the item was not found.</li>
 </ol>
+<h2>Difference between BST and AVL tree</h2>
+<table align="center">
+<thead>
+ <tr align="center">
+    <td>Simple to implement.</td>
+    <td>Complex to implement.</td>
+  </tr>
+  <tr>
+    <th>Binary Search Tree (BST)</th>
+    <th>AVL tree</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td>In Binary Search Tree, In AVL Tree, every node does not follow the balance factor</td>
+    <td>In AVL Tree, every node follows the balance factor i.e. 0, 1, -1.</td>
+  </tr>
+  <tr align="center">
+    <td>Every Binary Search tree is not an AVL tree.</td>
+    <td>Every AVL tree is a Binary Search tree.</td>
+  </tr>
+  <tr align="center">
+    <td >The height or depth of the tree is O(n).</td>
+    <td>The height or depth of the tree is O(logn) </td>
+  </tr>
+  <tr align="center">
+    <td>Searching is not efficient when there are a large number of nodes in the Binary Search tree. </td>
+    <td>Searching is efficient because searching for the desired node is faster due to the balancing of height. </td>
+  </tr>
+  <tr align="center">
+    <td>The Binary Search tree structure consists of 3 fields left subtree, data, and right subtree. </td>
+    <td>AVL tree structure consists of 4 fields left subtree, data, right subtree, and balancing factor.</td>
+  </tr>
+  <tr align="center">
+    <td>not a balanced tree.</td>
+    <td>balanced tree.</td>
+  </tr>
+  <tr align="center">
+    <td>In Binary Search tree. Insertion and deletion are easy because no rotations are required. </td>
+    <td>In an AVL tree, Insertion and deletion are complex as it requires multiple rotations to balance the tree.</td>
+  </tr>
+</tbody>
+</table>
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

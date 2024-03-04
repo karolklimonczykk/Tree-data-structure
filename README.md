@@ -121,6 +121,48 @@ subtree and recursively call the algorithm for the right subtree.
 root, search the left subtree recursively, and if it is larger, search the right subtree recursively.</li>
  <li>If the value is not found, return nullptr or a value indicating that the item was not found.</li>
 </ol>
+
+<h2>AVL tree</h2>
+<p>AVL tree is a self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees cannot be more than one for all nodes.</p>
+<p align="center"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20221229121830/avl.png" alt="avl_tree"></p>
+<p align="center">The above tree is AVL because the differences between the heights of left and right subtrees for every node are less than or equal to 1.</p>
+<h2>AVL Tree Operations</h2>
+<h3>Adding a node</h3>
+<ol>
+ <li>Insert a new node into the AVL tree according to the BST tree insertion rules.</li>
+ <li>Navigate up the AVL tree from the node that was the last node inserted.</li>
+ <li>For each node on the way to the root:</li>
+ <ol type="a">
+  <li>Update the node height.</li>
+  <li>Check whether the subtree rooted at this node is balanced (the difference in height of the right and left subtrees is less than or equal to 1).</li>
+  <li>If the subtree is unbalanced, perform an appropriate rotation to balance the tree.</li>
+ </ol>
+</ol>
+<h3>Removing a node</h3>
+<ol>
+ <li>Delete a node according to the BST deletion rules.</li>
+ <li>Navigate up the AVL tree from the node that was the last node deleted.</li>
+ <li>For each node on the way to the root:</li>
+ <ol type="a">
+  <li>Update the node height.</li>
+  <li>Check whether the subtree rooted at this node is balanced (the difference in height of the right and left subtrees is less than or equal to 1).</li>
+  <li>If the subtree is unbalanced, perform an appropriate rotation to balance the tree.</li>
+</ol>
+<h3>Balancing a AVL tree</h3>
+<ol type="1">
+ <li>Check the height difference of the right and left subtrees for each node in the AVL tree.</li>
+ <li>For each node whose subtree is unbalanced (the difference in the height of the right and left subtrees is more than 1), perform an appropriate rotation to balance the tree.</li>
+</ol>
+<p align="center"><img src="https://i.imgur.com/bJJy7fO.png" alt="avl_tree_alg"></p>
+<h3>Balancing a AVL tree step-by-step</h3>
+<p> In this tree, the difference in height of the left and right subtrees of node 4 is 2 (3 - 1), which means that the tree is unbalanced and we need to use a balancing algorithm.</p>
+<ol>
+ <li>We check which node is unbalanced. In our case, this is node 4.</li>
+ <li>We find the farthest unbalanced node down the tree. In our case, these are nodes 3 and 5.</li>
+ <li>We perform appropriate rotation to restore balance. In our case, we perform RR rotation, i.e. we move node 6 to the place of node 4 and node 4 to the place of node 6.</li>
+ <li>We update the heights of nodes in the tree.</li>
+</ol>
+ <p>In the resulting tree, each left and right subtree now has a height difference of at most 1, which means the tree is balanced.</p>
 <h2>Difference between BST and AVL tree</h2>
 <table align="center">
 <thead>
@@ -135,7 +177,7 @@ root, search the left subtree recursively, and if it is larger, search the right
 </thead>
 <tbody>
   <tr align="center">
-    <td>In Binary Search Tree, In AVL Tree, every node does not follow the balance factor</td>
+    <td>Binary Search Tree doesn't enforce a balance factor for every node</td>
     <td>In AVL Tree, every node follows the balance factor i.e. 0, 1, -1.</td>
   </tr>
   <tr align="center">
@@ -164,6 +206,8 @@ root, search the left subtree recursively, and if it is larger, search the right
   </tr>
 </tbody>
 </table>
+
+
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

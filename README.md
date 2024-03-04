@@ -124,13 +124,13 @@ root, search the left subtree recursively, and if it is larger, search the right
 <h2>Difference between BST and AVL tree</h2>
 <table align="center">
 <thead>
- <tr align="center">
-    <td>Simple to implement.</td>
-    <td>Complex to implement.</td>
-  </tr>
   <tr>
     <th>Binary Search Tree (BST)</th>
     <th>AVL tree</th>
+  </tr>
+   <tr align="center">
+    <td>Simple to implement.</td>
+    <td>Complex to implement.</td>
   </tr>
 </thead>
 <tbody>

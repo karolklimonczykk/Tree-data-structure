@@ -36,6 +36,16 @@ we will be adding to the tree.
   <li>The height of a tree is 2 (e.g. path from 1 to 4)</li>
   <li>The degree of a tree is 2 (e.g. 2 has two descendants (4 and 5) )</li>
  </ul>
+<h2>Tree Traversal Techniques</h2>
+<p><b>Preorder Traversal</b> - involves visiting a node, going to its left subtree and
+recursively calling the algorithm for the left subtree and then moving to the right one
+subtree and recursively call the algorithm for the right subtree.
+<ol>
+ <li>Visit the root.</li>
+ <li>Recursively call the algorithm for the left subtree.</li>
+ <li>Recursively call the algorithm for the right subtree.</li>
+</ol>
+</p>
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

@@ -46,6 +46,7 @@ subtree and recursively call the algorithm for the right subtree.
  <li>Recursively call the algorithm for the right subtree.</li>
 </ol>
 </p>
+<p align="center"><img src="https://i.imgur.com/2C61eSE.png" alt="tree" height="25%" width="25%"></p>
 <h2>References</h2>
 <ul>
   <li>Images are taken from <a href="https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/">here</a></li>

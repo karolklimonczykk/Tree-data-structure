@@ -65,7 +65,7 @@ subtree and recursively call the algorithm for the right subtree.
 </ol>
 </p>
 <p align="center"><img src="https://i.imgur.com/2C61eSE.png" alt="tree" height="25%" width="25%"><br>Inorder traversal of binary tree: 1,2,3</p>
-<h2>Binary Tree operations</h2>
+<h2>Binary Tree Operations</h2>
 <h3>Adding a node</h3>
 <ol>
  <li>If the tree is empty, create a new node and set it as the root of the tree.</li>

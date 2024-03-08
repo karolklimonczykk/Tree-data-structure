@@ -1,4 +1,5 @@
 # Tree data structure
+<h2>Description</h2>
  Defining, using structures, formulating binary search tree (BST) and AVL algorithms with implementation in C++.
 <h2>Tree Terminologies</h2>
 <ul>
